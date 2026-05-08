@@ -1,0 +1,205 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Clinic Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Menu y'ibumoso */
+        .sidebar {
+            width: 260px;
+            background-color: white;
+            border-right: 2px solid #000;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .logo-section {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            color: #e67e22; /* Ibara rya orange */
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+
+        .rural-care {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            background-color: #f5dcd0;
+            border: 1px solid #333;
+            padding: 12px;
+            margin-bottom: 8px;
+            font-size: 18px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        /* Igice cy'iburyo */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-bar {
+            background-color: #d6eaf8;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+
+        .logout-btn {
+            background-color: #f5dcd0;
+            border: 1px solid #000;
+            padding: 5px 15px;
+            font-style: italic;
+        }
+
+        /* Igice cy'ifomu */
+        .canvas {
+            background-color: black;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-box {
+            background-color: #e8f6e9; /* Ibara rya pome */
+            width: 85%;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 60px; /* Imfuruka zizingiye */
+            border: 2px solid #333;
+        }
+
+        .form-title {
+            font-family: 'Georgia', serif;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-label {
+            color: #d4ac0d; /* Ibara rya zahabu */
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            background-color: #f5dcd0;
+            border: 1px solid #2e86c1;
+            font-style: italic;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background-color: #f5dcd0;
+            border: 1px solid #333;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .status-footer {
+            background-color: #d6eaf8;
+            margin-top: 30px;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-section">
+            <div style="font-size: 40px; color: purple;">&#10010;</div>
+            <div class="logo-text">welcome to city care clinic</div>
+        </div>
+      
+      <button><a href="task132.html">Rural care</a></button>
+        <button><a href="task6.html">Register Patient</a></button>
+        <button><a href="task12.html">patients</a></button>
+        <button><a href="task22.html">appointment</a></button>
+        <button><a href="task70.html">Report</a></button>
+    </div>
+
+    <div class="main-content">
+        <div class="top-bar">
+            <span>PATIENT CHECK-IN DASHBOARD</span>
+            <button class="logout-btn">logout</button>
+        </div>
+
+        <div class="canvas">
+            <div class="form-box">
+                <div class="form-title">Register New Patient</div>
+
+                <label class="input-label">Full name</label>
+                <input type="text" class="input-field" placeholder="Enter patient name">
+
+                <label class="input-label">Age</label>
+                <input type="text" class="input-field" placeholder="Enter age">
+
+                <label class="input-label">Gender</label>
+                <input type="text" class="input-field" placeholder="Enter gender">
+
+                <label class="input-label">Reason for visit</label>
+                <input type="text" class="input-field" placeholder="Eg:fever, headache">
+
+                <div class="button-group">
+                    <button class="btn">Save Patient</button>
+                    <button class="btn">Clear</button>
+                </div>
+
+                <div class="status-footer">
+                    Status: Waiting for input...
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
